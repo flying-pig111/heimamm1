@@ -1,0 +1,302 @@
+body {
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    // height: 3000px;
+    background-color: #f2f4f7;
+}
+
+// * {
+//     margin: 0;
+//     padding: 0;
+// }
+// 尽量不使用这个
+
+.wrap {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    font-size: .6667rem;
+}
+
+// 防止屏幕大小750
+@media screen and (min-width:750px) {
+    html {
+        font-size: 37.5px !important;
+    }
+}
+
+// 头部制作
+header {
+    width: 20rem;
+    height: 2.6667rem;
+    font-size: .9333rem;
+    font-family: Microsoft YaHei, Microsoft YaHei-Regular;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.6667rem;
+    color: #1c1c1c;
+    border-bottom: .0267rem solid #eaeaea;
+}
+
+// 头部制作结束
+// nav栏制作 
+nav {
+    display: flex;
+    // width: 20rem;
+    // height: 13.3333rem;
+    // 前面自己写的时候我是给了大盒子和小盒子固定的宽度，是仿照苏宁的写法
+    // 下面直接用flex布局加上换行，利用自适应很便捷
+    flex-wrap: wrap;
+    margin-bottom: 1.3333rem;
+
+    a {
+        box-sizing: border-box;
+        display: flex;
+        // float: left;
+        // width: 6.6667rem;
+        // height: 5.3333rem;
+        width: 33.3333%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+
+    img {
+        width: 2.88rem;
+        height: 2.88rem;
+    }
+
+    span {
+        color: #707070;
+        margin-top: .5333rem;
+    }
+}
+
+// nav栏制作end
+
+// 每日一练
+.go {
+    width: 20rem;
+    height: 12.5rem;
+
+    img {
+        width: 19.2rem;
+        height: 4.0533rem;
+        margin: 0 .5333rem;
+    }
+
+    div {
+        width: 20rem;
+        height: .2667rem;
+        background-color: #f2f4f7;
+        margin-top: 1.3333rem;
+    }
+}
+
+// 每日一练
+// 就业指导模块---头部 
+.content {
+    padding: 1.0667rem .64rem 0 .64rem;
+
+    .content_hd {
+        display: flex;
+        height: 1.0667rem;
+        justify-content: space-between;
+        line-height: 1.0667rem;
+        padding-left: 1.3333rem;
+
+        h4 {
+            position: relative;
+            font-size: .7467rem;
+            font-weight: 700;
+            color: #333;
+            margin: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: .0533rem;
+                left: -1.2rem;
+                width: 1.0667rem;
+                height: 1.0667rem;
+                background: url(../icons/i2.png) no-repeat;
+                background-size: 1.0133rem 1.0133rem;
+            }
+        }
+
+        .more {
+            font-size: .5867rem;
+            font-weight: normal;
+            color: #999;
+        }
+    }
+
+}
+
+// 就业指导模块---头部end
+// 就业指导模块---轮播图
+.get_job_focus {
+    position: relative;
+    margin-top: 1.0667rem;
+
+    .swiper-container {
+        // width: 100%;
+        height: 100%;
+        // 根据需求把宽度定位 540px
+        width: 14.4rem;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        // 竖向显示
+        flex-direction: column;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        // 其余的兄弟是 0.8
+        transform: scale(0.8);
+        // 给不是当前页面的图片添加透明度0.4，让他显示不明显
+        opacity: 0.3;
+
+        a {
+            width: 9.013333rem;
+            height: 10.026667rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            width: 9.013333rem;
+            font-size: 0.666667rem;
+            margin-top: 0.64rem;
+            color: #333;
+        }
+    }
+
+    // 当前选中的 slide   中间那个
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        // 给当前页面添加最高权重，让他不被其他页面遮挡
+        z-index: 999;
+        // 给不是当前页面的图片添加透明度1，让他显示明显
+        opacity: 1;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        outline: none;
+
+        &:after {
+            font-size: 1.066667rem;
+            color: #333;
+        }
+    }
+}
+
+// 就业指导模块---轮播图end
+.study {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 3.2rem;
+
+    .study_fo {
+        padding: 1.0667rem .4rem;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+
+        a {
+            display: inline-block;
+            width: 7.7333rem;
+            height: 9.0667rem;
+            border-radius: .2667rem;
+            box-shadow: 0 0 .2667rem rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 7.7333rem;
+                height: 50%;
+            }
+
+            h5 {
+                font-size: .6667rem;
+                padding: .2133rem;
+                font-weight: normal;
+            }
+
+            p {
+                font-size: .64rem;
+                color: #FF4400;
+                margin: -0.8rem 0 0px .5333rem;
+            }
+        }
+
+    }
+
+}
+
+// 底部制作 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 3.0667rem;
+    border-top: .0533rem solid #ccc;
+    z-index: 99999;
+
+    a {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 1.04rem;
+            height: 1.0933rem;
+            margin-top: .5333rem;
+        }
+
+        span {
+            font-size: .5867rem;
+            margin-top: .4rem;
+            color: #666666;
+        }
+    }
+}
+
+// 底部制作end
