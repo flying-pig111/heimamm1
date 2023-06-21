@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旋转木马</title>
+    <style>
+        body {
+            perspective: 750px;
+        }
+
+        section {
+            position: relative;
+            width: 80px;
+            height: 120px;
+            margin: 200px auto;
+            transform-style: preserve-3d;
+            animation: move 6s linear infinite;
+            background: url(images12/1.jpg) no-repeat;
+            background-size: 80px 120px;
+        }
+
+        /* 可以添加一个鼠标经过停止属性--不是这个案例的重点 */
+        section:hover {
+            /* 鼠标经过停止 */
+            /* animation-play-state: paused; */
+        }
+
+        section div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        section div img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 这个案例没有想想中的复杂,每个盒子旋转后跟随着盒子本身的坐标系都会改变-----坐标系是按照自己来定的.所以所有盒子移动都是translateZ:400px,因为我们给定义的时候都是以盒子本身为坐标系的----脑子一定要转过来 */
+        /* 脑子一定要转过来弯*/
+        /* 脑子一定要转过来弯*/
+        /* 脑子一定要转过来弯*/
+
+        section div:nth-child(1) {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        section div:nth-child(2) {
+            transform: rotateY(60deg) translateZ(100px);
+        }
+
+        section div:nth-child(3) {
+            transform: rotateY(120deg) translateZ(100px);
+        }
+
+        section div:nth-child(4) {
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+        section div:nth-child(5) {
+            transform: rotateY(240deg) translateZ(100px);
+        }
+
+        section div:nth-child(6) {
+            transform: rotateY(300deg) translateZ(100px);
+        }
+
+        @keyframes move {
+            0% {
+                transform: rotateY(0);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div><img src="images12/2.jpg" alt=""></div>
+        <div><img src="images12/3.jpg" alt=""></div>
+        <div><img src="images12/4.jpg" alt=""></div>
+        <div><img src="images12/5.jpg" alt=""></div>
+        <div><img src="images12/6.jpg" alt=""></div>
+        <div><img src="images12/7.jpg" alt=""></div>
+
+    </section>
+</body>
+
+</html>
