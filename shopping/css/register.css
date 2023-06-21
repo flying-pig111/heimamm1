@@ -1,0 +1,209 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?5aiukc');
+    src: url('fonts/icomoon.eot?5aiukc#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?5aiukc') format('truetype'),
+        url('fonts/icomoon.woff?5aiukc') format('woff'),
+        url('fonts/icomoon.svg?5aiukc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* nav栏制作开始 */
+.header {
+    height: 84px;
+    line-height: 90px;
+    padding-left: 5px;
+    border-bottom: 2px solid #c81623;
+}
+
+.registerarea {
+    height: 524px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.nav {
+    height: 44px;
+    background-color: #ececec;
+    line-height: 44px;
+}
+
+.nav h3 {
+    float: left;
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+
+.login p {
+    float: left;
+}
+
+.login a {
+    float: left;
+    color: #c81623;
+    margin-right: 12px;
+}
+
+/* nav栏制作完成 */
+
+/* registerarea区域制作 */
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_form li {
+    font-family: 'icomoon';
+    height: 36px;
+    margin-top: 25px;
+}
+
+.reg_form li span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.reg_form label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: normal;
+}
+
+.reg_form input {
+    width: 242px;
+    height: 36px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.error {
+    color: #c81623;
+}
+
+.error_icon {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.success {
+    color: green;
+}
+
+.success_icon {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.reg_form .safeness {
+    height: 20px;
+    margin-left: 170px;
+    margin-top: 10px;
+}
+
+.reg_form .safeness em {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    width: 35px;
+    height: 13px;
+    line-height: 11px;
+    text-align: center;
+}
+
+.reg_form .safeness em:nth-child(1) {
+    background-color: #de1111;
+}
+
+.reg_form .safeness em:nth-child(2) {
+    background-color: #40b83f;
+}
+
+.reg_form .safeness em:nth-child(3) {
+    background-color: #f79100;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.user_agreement {
+    color: #4d4d4d;
+    margin: 20px 0 0 105px !important;
+}
+
+.user_agreement label {
+    width: 100px;
+}
+
+.user_agreement a {
+    display: inline-block;
+    font-size: 12px;
+    color: #1ba1e6;
+    font-weight: normal;
+}
+
+.finish input {
+    width: 195px;
+    background-color: #c81623;
+    margin-left: 115px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* registerarea区域制作结束 */
+/* 第三行 */
+
+.mod_copyright {
+    width: 972px;
+    height: 59px;
+    margin: 10px auto;
+}
+
+.mod_copyright a {
+    color: #666;
+}
+
+.mod_copyright li {
+    float: left;
+    width: 81px;
+    font-size: 12px;
+    color: #666;
+    font-style: SimSun;
+    line-height: 28px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.mod_copyright p {
+    font-size: 12px;
+    color: #999;
+    line-height: 22px;
+    font-style: SimSun;
+    text-align: center;
+}
+
+/* 第三行 */

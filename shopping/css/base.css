@@ -1,0 +1,77 @@
+* {
+    /* 把我们所有的标签的初始内外标签清零 */
+    margin: 0;
+    padding: 0;
+    /* 盒子的初始属性按照CSS3的新增样式，不会撑大盒子 */
+    box-sizing: border-box;
+}
+
+/* 把斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去去掉li的初始小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    /* border照顾低版本浏览器,如果图片上面有连接,会出现边框的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过的时候鼠标图标变成小手,这样用户就知道可以点击了 */
+    cursor: pointer
+}
+
+/* 所有的链接初始颜色为#666,且没有下划线 */
+a {
+    color: #666;
+    text-decoration: none
+}
+
+/* 鼠标经过会变成这种红色#c81623 */
+a:hover {
+    color: #c81623
+}
+
+/* 按钮,文本的初始字体为以下 */
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0;
+    outline: none;
+}
+
+body {
+    /* CSS3的属性,抗锯齿性,让文字显示的时候不要有太大锯齿 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+
+    /* "\5B8B\4F53"这个是宋体 ,这个是采用了Unicode编译的宋体的写法,兼容性比较好*/
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 下面两行时是给需要的元素清除浮动 */
+/* 伪元素法清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}

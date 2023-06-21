@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?5aiukc');
+    src: url('fonts/icomoon.eot?5aiukc#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?5aiukc') format('truetype'),
+        url('fonts/icomoon.woff?5aiukc') format('woff'),
+        url('fonts/icomoon.svg?5aiukc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+.nav1 {
+    position: relative;
+}
+
+.list_miaosha {
+    position: absolute;
+    top: 45px;
+    left: 190px;
+}
+
+.list_miaosha img:nth-child(1) {
+    margin-right: 10px;
+}
+
+.box_list_hd {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.list_promotion {
+    float: left;
+}
+
+.list_promotion h3 {
+    float: left;
+    margin: 0 25px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+.tab_list {
+    float: right;
+}
+
+.tab_list ul li {
+    font-family: 'icomoon';
+    float: left;
+    padding: 0 24px;
+}
+
+.tab_list a {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.tab_list .list_other {
+    color: #b1191a;
+}
+
+.tab_list ul li:hover a {
+    /* 这里写鼠标经过是因为公共样式里面的a颜色改称了黑色，这里再进行层叠掉它 */
+    color: #b1191a;
+}
+
+.list_header {
+    height: 125px;
+    background: url(../images/背景banner.png) no-repeat;
+    line-height: 125px;
+}
+
+.list_header img {
+    margin-left: 497px;
+}
+
+/* 111111111111111111111111111111111111111111111 */
+.list_commodity {
+    margin-bottom: 15px;
+}
+
+.list_commodity ul {
+    width: 1210px;
+}
+
+.list_commodity li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.list_commodity li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.list_commodity ul li>a {
+    display: block;
+    width: 289px;
+    height: 420px;
+    border: 1px solid transparent;
+    /* 这里需要加一个透明边框，来进行占位，不然下面使用hover的时候，凭空加上一个边框，盒子的大小前后有变化，那就会有移动，可能影响布局。（虽然看起来感觉不错！！！） */
+}
+
+.list_commodity ul li:hover>a {
+    border: 1px solid #b1191a;
+}
+
+.commo img {
+    width: 160px;
+    height: 290px;
+    margin-left: 64px;
+}
+
+.list_commodity .list_title {
+    height: 60px;
+    margin: 0 12px;
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.list_commodity .price {
+    height: 35px;
+    margin: 0 12px;
+}
+
+.list_commodity .price p {
+    display: inline-block;
+}
+
+.list_commodity .price p:nth-child(1) {
+    font-size: 22px;
+    color: #e60012;
+}
+
+.list_commodity .price p:nth-child(2) {
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+
+.sold {
+    margin: 0 12px;
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.sold h4 {
+    display: inline-block;
+    font-weight: normal;
+    color: #b1191a;
+}
+
+.sold .bar {
+    display: inline-block;
+    width: 120px;
+    height: 13px;
+}
+
+.bar {
+    width: 120px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid red;
+    padding: 1px;
+    border-radius: 7px;
+}
+
+.bar-in {
+    width: 87%;
+    height: 100%;
+    background-color: red;
+    border-radius: 7px;
+}
+
+.imme a {
+    display: block;
+    width: 289px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    background-color: #b1191a;
+    border: 1px solid #b1191a;
+
+}
